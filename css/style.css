@@ -1,0 +1,26 @@
+.bg-img {
+  background-image: url("../img/Justicia-digital.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.titulo_principal {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.accordion-button,
+.accordion-collapse
+{
+  background-color: #333;
+  color: white;
+}
+
+.bg-logo {
+  background-color: #67a1c9;
+}
+
+i {
+  font-size: 50px;
+}

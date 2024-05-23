@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html"> <img src="img/roundcube_logo.png" width="50" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mas Opciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active text-white" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Nav bar -->
+
+    <div class="container-fluid bg-img">
+        <main class="py-5 px-5">
+            <div class="py-5 mb-4 text-center text-white">
+                <img class="d-block mx-auto mb-4" src="img/form.png">
+            </div>
+
+            <div class="row rounded mx-5 px-5 pb-5 g-5 justify-content-center bg-dark">
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3 text-white">Formulario</h4>
+                    <!-- Separador -->
+                    <hr class="my-4 text-white">
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-sm-6 text-white">
+                                <label for="firstName" class="form-label">* Nombre</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 text-white">
+                                <label for="lastName" class="form-label">* Apellido</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-white">
+                                <label for="username" class="form-label">* Nombre Usuario</label>
+                                <div class="input-group has-validation"> <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        El usuario es requerido.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-white">
+                                <label for="email" class="form-label">Email <span
+                                        class="text-muted">(Opcional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+                                <div class="invalid-feedback">
+                                    Por favor ingrese un correo electronico valido.
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-white">
+                                <label for="address" class="form-label">* Direccion</label>
+                                <input type="text" class="form-control" id="address" placeholder="Calle 13" required="">
+                                <div class="invalid-feedback">
+                                    Por favor ingrese una direccion.
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 text-white">
+                                <label for="country" class="form-label">* Pais</label>
+                                <select class="form-select" id="country" required="">
+                                    <option value="">Elegir...</option>
+                                    <option value="">Argentina</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor seleccione un pais.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 text-white">
+                                <label for="state" class="form-label">* Provincia</label>
+                                <select class="form-select" id="state" required="">
+                                    <option value="">Elegir...</option>
+                                    <option value="">Buenos Aires</option>
+                                    <option value="">Chubut</option>
+                                    <option value="">Córdoba</option>
+                                    <option value="">Corrientes</option>
+                                    <option value="">Entre Ríos</option>
+                                    <option value="">Formosa</option>
+                                    <option value="">Jujuy</option>
+                                    <option value="">La Pampa</option>
+                                    <option value="">La Rioja</option>
+                                    <option value="">Mendoza</option>
+                                    <option value="">Misiones</option>
+                                    <option value="">Neuquén</option>
+                                    <option value="">Río Negro</option>
+                                    <option value="">Salta</option>
+                                    <option value="">San Juan</option>
+                                    <option value="">San Luis</option>
+                                    <option value="">Santa Cruz</option>
+                                    <option value="">Santa Fe</option>
+                                    <option value="">Santiago del Estero</option>
+                                    <option value="">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                                    <option value="">Tucumán</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor seleccione una provincia.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-white">
+                                <label for="zip" class="form-label">* Codigo Postal</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Código postal requerido.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check text-white">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Enviar notificaciones al correo</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info" required="">
+                            <label class="form-check-label" for="save-info">
+                                <a href="privacidad.html">Aceptar politica de privacidad</a></label>
+                            <div class="invalid-feedback">
+                                Debe aceptar la politica de privacidad.
+                            </div>
+                        </div>
+
+                        <!-- Separador -->
+                        <hr class="my-4 text-white">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div class="pt-5 container-fluid bg-dark">
+        <div class="container bg-dark text-white">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Fin Footer -->
+
+    <script src="js/form-validation.js"> </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"> </script>
+</body>
+
+</html>
