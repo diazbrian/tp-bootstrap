@@ -7,6 +7,6 @@ git clone https://github.com/diazbrian/tp-bootstrap
 ```
 
 ## OR download zip repository
-[download link] (https://github.com/diazbrian/tp-bootstrap/archive/refs/heads/main.zip)
+[download link](https://github.com/diazbrian/tp-bootstrap/archive/refs/heads/main.zip)
 
 see [Bootstrap v5](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
